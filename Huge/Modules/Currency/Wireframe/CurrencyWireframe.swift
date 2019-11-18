@@ -38,10 +38,9 @@ extension CurrencyWireframe: CurrencyWireframeInterface {
 
     func toCurrencies() {
         let presenter = CurrencyPresenter(currenciesRepository: repositoryProvider.makeCurrenciesRepository(), wireframe: self)
-        //let viewController: PostCollectionViewController = storyBoard.instantiateViewController()
+        let viewController: CurrencyViewController = storyBoard.instantiateViewController()
 
-        //viewController.presenter = presenter
-        //navigationController.pushViewController(viewController, animated: true)
+        viewController.presenter = presenter
+        navigationController.pushViewController(viewController, animated: false)
     }
 }
-

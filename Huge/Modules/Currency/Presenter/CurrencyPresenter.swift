@@ -22,6 +22,7 @@ class CurrencyPresenter {
     struct Output {
         let error: Driver<Message>
         let currencies: Driver<Any>
+        let state: Driver<ActivityState>
     }
 
     // MARK: Initializers
@@ -34,8 +35,17 @@ class CurrencyPresenter {
     // MARK: Instance methods
 
     func transform(_ input: Input) -> Output {
+        let activityIndicator = ActivityIndicator()
         let errorTracker = ErrorTracker()
 
-        return Output(error: errorTracker.map(ErrorBuilder.create), currencies: Driver.empty())
+        currenciesRepository.retrieveCurrencies()
+            .trackActivity(activityIndicator)
+            .trackError(errorTracker)
+            .subscribe(onNext: { currencies in
+
+            })
+            .disposed(by: disposeBag)
+
+        return Output(error: errorTracker.map(ErrorBuilder.create), currencies: Driver.empty(), state: activityIndicator.asDriver())
     }
 }
