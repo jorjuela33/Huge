@@ -27,6 +27,7 @@ target 'Huge' do
   use_frameworks!
 
   pod 'Charts', '~> 3.3.0'
+  pod 'TPKeyboardAvoiding', '~> 1.3.2'
   pod 'MBProgressHUD', '~> 1.1'
   pod 'RxCocoa', '~> 5.0'
   pod 'RxSwift', '~> 5.0'
