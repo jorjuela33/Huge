@@ -19,8 +19,8 @@ class Application {
         let navigationController = NavigationController()
         window.rootViewController = navigationController
 
-        let postsWireframe = PostsWireframe(navigationController: navigationController, repositoryProvider: repositoryProvider)
-        postsWireframe.toPostsScreen()
+        let currencyWireframe = CurrencyWireframe(navigationController: navigationController, repositoryProvider: repositoryProvider)
+        currencyWireframe.toCurrencies()
         window.makeKeyAndVisible()
     }
 }
