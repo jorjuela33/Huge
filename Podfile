@@ -6,7 +6,7 @@ target 'Application' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.0.0-rc.2'
-  pod 'RxSwift', '~> 4.4'
+  pod 'RxSwift', '~> 5.0'
 
   target 'ApplicationTests' do
     # Pods for testing
@@ -18,7 +18,7 @@ target 'Domain' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'RxSwift', '~> 4.4'
+  pod 'RxSwift', '~> 5.0'
 
 end
 
@@ -27,8 +27,8 @@ target 'Huge' do
   use_frameworks!
 
   pod 'MBProgressHUD', '~> 1.1'
-  pod 'RxCocoa', '~> 4.4'
-  pod 'RxSwift', '~> 4.4'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'RxSwift', '~> 5.0'
 
   target 'HugeTests' do
     inherit! :search_paths
