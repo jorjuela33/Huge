@@ -13,7 +13,6 @@
 		97BD34E05647D5F3438F4DCF /* Pods_Huge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EB9E1B94106F07EE383EA /* Pods_Huge.framework */; };
 		CFABEEA72382FD05004E46EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEEA62382FD05004E46EA /* AppDelegate.swift */; };
 		CFABEEA92382FD05004E46EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEEA82382FD05004E46EA /* SceneDelegate.swift */; };
-		CFABEEAB2382FD05004E46EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEEAA2382FD05004E46EA /* ViewController.swift */; };
 		CFABEEAE2382FD05004E46EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFABEEAC2382FD05004E46EA /* Main.storyboard */; };
 		CFABEEB02382FD09004E46EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFABEEAF2382FD09004E46EA /* Assets.xcassets */; };
 		CFABEEB32382FD09004E46EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFABEEB12382FD09004E46EA /* LaunchScreen.storyboard */; };
@@ -53,6 +52,12 @@
 		CFABEF502383069F004E46EA /* CurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF4F2383069F004E46EA /* CurrenciesRepository.swift */; };
 		CFABEF52238306B5004E46EA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF51238306B5004E46EA /* Repository.swift */; };
 		CFABEF54238306EC004E46EA /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF53238306EC004E46EA /* StateMachine.swift */; };
+		CFABEF5823830983004E46EA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF5723830983004E46EA /* Application.swift */; };
+		CFABEF5E238309EC004E46EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF5D238309EC004E46EA /* ViewController.swift */; };
+		CFABEF6023830A86004E46EA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF5F23830A86004E46EA /* UIViewController.swift */; };
+		CFABEF6223830AA4004E46EA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF6123830AA4004E46EA /* NavigationController.swift */; };
+		CFABEF6423830AC5004E46EA /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF6323830AC5004E46EA /* NavigationConfigurator.swift */; };
+		CFABEF6623830B31004E46EA /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABEF6523830B31004E46EA /* LoadingIndicator.swift */; };
 		DB0116567064A4776D885146 /* Pods_HugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487F598CA2C47818F8C99253 /* Pods_HugeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,7 +133,6 @@
 		CFABEEA32382FD05004E46EA /* Huge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFABEEA62382FD05004E46EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFABEEA82382FD05004E46EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFABEEAA2382FD05004E46EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFABEEAD2382FD05004E46EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFABEEAF2382FD09004E46EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFABEEB22382FD09004E46EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -172,6 +176,12 @@
 		CFABEF4F2383069F004E46EA /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
 		CFABEF51238306B5004E46EA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		CFABEF53238306EC004E46EA /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		CFABEF5723830983004E46EA /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		CFABEF5D238309EC004E46EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFABEF5F23830A86004E46EA /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CFABEF6123830AA4004E46EA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CFABEF6323830AC5004E46EA /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		CFABEF6523830B31004E46EA /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,9 +277,9 @@
 		CFABEEA52382FD05004E46EA /* Huge */ = {
 			isa = PBXGroup;
 			children = (
-				CFABEEA62382FD05004E46EA /* AppDelegate.swift */,
-				CFABEEA82382FD05004E46EA /* SceneDelegate.swift */,
-				CFABEEAA2382FD05004E46EA /* ViewController.swift */,
+				CFABEF5623830977004E46EA /* Application */,
+				CFABEF5523830955004E46EA /* Base */,
+				CFABEF59238309B6004E46EA /* Components */,
 				CFABEEAC2382FD05004E46EA /* Main.storyboard */,
 				CFABEEAF2382FD09004E46EA /* Assets.xcassets */,
 				CFABEEB12382FD09004E46EA /* LaunchScreen.storyboard */,
@@ -475,6 +485,59 @@
 				CFABEF4F2383069F004E46EA /* CurrenciesRepository.swift */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		CFABEF5523830955004E46EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEEA62382FD05004E46EA /* AppDelegate.swift */,
+				CFABEEA82382FD05004E46EA /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CFABEF5623830977004E46EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEF5723830983004E46EA /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CFABEF59238309B6004E46EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEF5C238309DD004E46EA /* Loading */,
+				CFABEF5A238309C6004E46EA /* Navigation Controller */,
+				CFABEF5B238309CC004E46EA /* View Controller */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CFABEF5A238309C6004E46EA /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEF6123830AA4004E46EA /* NavigationController.swift */,
+				CFABEF6323830AC5004E46EA /* NavigationConfigurator.swift */,
+			);
+			path = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		CFABEF5B238309CC004E46EA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEF5D238309EC004E46EA /* ViewController.swift */,
+				CFABEF5F23830A86004E46EA /* UIViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		CFABEF5C238309DD004E46EA /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CFABEF6523830B31004E46EA /* LoadingIndicator.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		D38022E9273AB2BEA78CF4FF /* Frameworks */ = {
@@ -856,8 +919,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFABEEAB2382FD05004E46EA /* ViewController.swift in Sources */,
+				CFABEF5E238309EC004E46EA /* ViewController.swift in Sources */,
+				CFABEF5823830983004E46EA /* Application.swift in Sources */,
+				CFABEF6423830AC5004E46EA /* NavigationConfigurator.swift in Sources */,
+				CFABEF6023830A86004E46EA /* UIViewController.swift in Sources */,
+				CFABEF6623830B31004E46EA /* LoadingIndicator.swift in Sources */,
 				CFABEEA72382FD05004E46EA /* AppDelegate.swift in Sources */,
+				CFABEF6223830AA4004E46EA /* NavigationController.swift in Sources */,
 				CFABEEA92382FD05004E46EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,8 @@ end
 target 'Huge' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
- 
+
+  pod 'MBProgressHUD', '~> 1.1'
   pod 'RxCocoa', '~> 4.4'
   pod 'RxSwift', '~> 4.4'
 
