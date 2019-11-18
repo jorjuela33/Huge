@@ -10,6 +10,7 @@ PODS:
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
+  - TPKeyboardAvoiding (1.3.3)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.1)
   - RxCocoa (~> 5.0)
   - RxSwift (~> 5.0)
+  - TPKeyboardAvoiding (~> 1.3.2)
 
 SPEC REPOS:
   trunk:
@@ -26,6 +28,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  TPKeyboardAvoiding: 6dd3fe3268b8f2627beb7ff3d82a3cacbdf66a36
 
-PODFILE CHECKSUM: d7b7d0d342b66e44efb3a82ba3825bbb7f37feb5
+PODFILE CHECKSUM: 69fa544fae486a43a8725eb89f8a9e89a83c4256
 
 COCOAPODS: 1.8.4
