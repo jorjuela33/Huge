@@ -25,6 +25,6 @@ extension CurrencyEntity: DomainTypeConvertible {
     // MARK: DomainTypeConvertible
 
     func asDomain() -> Currency {
-        return Currency(symbol: symbol, value: value)
+        return Currency(type: CurrencyType(rawValue: symbol) ?? .USD, value: value)
     }
 }

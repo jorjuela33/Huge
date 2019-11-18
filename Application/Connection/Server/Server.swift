@@ -13,12 +13,11 @@ struct Server {
     let isSecure: Bool
     let path: String
 
-    static let production = Server(host: "data.fixer.io", isSecure: true)
-    static let staging = Server(host: "data.fixer.io", isSecure: true)
+    static let production = Server(host: "data.fixer.io", isSecure: false)
+    static let staging = Server(host: "data.fixer.io", isSecure: false)
     
     // MARK: Initializers
-    
-    // TODO: HOW we can get this dynamic?
+
     init(host: String, isSecure: Bool, path: String = "api") {
         self.host = host
         self.isSecure = isSecure

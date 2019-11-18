@@ -8,11 +8,11 @@
 
 import RxSwift
 
-public enum CurrencyType {
+public enum CurrencyType: String {
     case BRL
-    case EUR
     case GBP
     case JPY
+    case USD
 }
 
 public protocol CurrenciesRepository {
@@ -20,7 +20,7 @@ public protocol CurrenciesRepository {
 }
 
 public extension CurrenciesRepository {
-    func retrieveCurrencies(for currencies: [CurrencyType] = [.BRL, .EUR, .GBP, .JPY]) -> Single<[Currency]> {
+    func retrieveCurrencies(for currencies: [CurrencyType] = [.BRL, .GBP, .JPY, .USD]) -> Single<[Currency]> {
         return retrieveCurrencies(for: currencies)
     }
 }

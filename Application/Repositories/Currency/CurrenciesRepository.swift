@@ -9,17 +9,6 @@
 import Domain
 import RxSwift
 
-private extension CurrencyType {
-    var rawValue: String {
-        switch self {
-        case .BRL: return "BRL"
-        case .EUR: return "EUR"
-        case .GBP: return "GBP"
-        case .JPY: return "JPY"
-        }
-    }
-}
-
 class CurrenciesRepository: Repository {
     private let network: Network
 
@@ -37,8 +26,7 @@ extension CurrenciesRepository: Domain.CurrenciesRepository {
     func retrieveCurrencies(for currencies: [CurrencyType]) -> Single<[Currency]> {
         return Single.create(subscribe: { observer in
             self.beginLoading()
-            let rawCurrencies = currencies.map({ $0.rawValue }).joined(separator: ",")
-            let connectionRequestRegistration = self.network.retrieveCurrencies(for: rawCurrencies, withCallback: { result in
+            let connectionRequestRegistration = self.network.retrieveCurrencies(for: currencies.map({ $0.rawValue }), withCallback: { result in
                 switch result {
                 case let .failure(error):
                     self.endLoadingStateWithState(.error)

@@ -9,13 +9,13 @@
 import Foundation
 
 public struct Currency {
-    public let symbol: String
+    public let type: CurrencyType
     public let value: Double
 
     // MARK: Initializers
 
-    public init(symbol: String, value: Double) {
-        self.symbol = symbol
+    public init(type: CurrencyType, value: Double) {
+        self.type = type
         self.value = value
     }
 }
@@ -25,6 +25,6 @@ extension Currency: Equatable {
     // MARK: Equatable
 
     public static func == (lhs: Currency, rhs: Currency) -> Bool {
-        return lhs.symbol == rhs.symbol && lhs.value == rhs.value
+        return lhs.type.rawValue == rhs.type.rawValue && lhs.value == rhs.value
     }
 }

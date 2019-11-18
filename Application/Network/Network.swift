@@ -23,7 +23,7 @@ protocol Network {
     func cancelConnectionRequest(withRegistration registration: ConnectionRequestRegistration)
     func header(forKey key: String) -> String?
     func retrieveCurrencies(
-        for argList: CVarArg...,
+        for currencies: [String],
         withCallback callback: @escaping RetrieveCallback<[CurrencyEntity]>
     ) -> ConnectionRequestRegistration
 
@@ -61,19 +61,18 @@ final class NetworkManager: Network {
         return connection.header(forKey: key)
     }
 
-    /// retrieves all the cards, if there is userID
-    /// it will retrieve the cards associated to the
-    /// given userID
+    /// retrieves all the currencies for the given symbols
     func retrieveCurrencies(
-        for argList: CVarArg...,
+        for currencies: [String],
         withCallback callback: @escaping RetrieveCallback<[CurrencyEntity]>
     ) -> ConnectionRequestRegistration {
 
-        let currencies = withVaList(argList) { $0 }
-        let parameters: [String: Any] =  ["access_key": apiKey, "base": "USD", "symbols": currencies]
+        let parameters: [String: Any] =  ["access_key": apiKey, "symbols": currencies.joined(separator: ",")]
         let connectionRequest = connection.get("latest", parameters: parameters).response({ (result: Result<CurrenciesResponse, Error>) in
             switch result {
-            case let .failure(error): callback(.failure(error))
+            case let .failure(error):
+                callback(.failure(error))
+                
             case let .success(response):
                 guard response.success else {
                     let error = HGError(key: "NetworkManager.retrieveCurrencies", currentValue: response, reason: "Something Went Wrong")

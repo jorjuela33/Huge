@@ -300,7 +300,6 @@
 				CFABEF59238309B6004E46EA /* Components */,
 				CFABEF7B23830D1C004E46EA /* Extensions */,
 				CFABEF9923831116004E46EA /* Modules */,
-				CFABEEAC2382FD05004E46EA /* Main.storyboard */,
 				CFABEF6E23830C06004E46EA /* Utilities */,
 				CFABEEAF2382FD09004E46EA /* Assets.xcassets */,
 				CFABEEB12382FD09004E46EA /* LaunchScreen.storyboard */,
@@ -617,6 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				CFABEF9A23831116004E46EA /* Currency */,
+				CFABEEAC2382FD05004E46EA /* Main.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
